@@ -236,3 +236,24 @@ agora todas as rotas estão habilitadas para serem utilizadas no swagger
 | GET:/ocorrencias/{id}             | busca uma ocorrencia especifica                     |
 | DELETE:/ocorrencias/{id}          | deleta uma ocorrência                               |
 | GET:/ocorrencias/userId/{id}      | busca as ocorrências de um usuário                  |
+
+### Arquivo usado para configuração do docker:
+este Arquivo é usado para criar a imagem Docker
+>Ver `Dockerfile`
+```Dockerfile
+FROM ubuntu:latest AS build
+
+RUN apt-get update
+RUN apt-get install openjdk-17-jdk maven -y
+COPY . .
+
+RUN mvn package
+
+FROM openjdk:17-jdk-slim
+
+EXPOSE 8080
+
+COPY --from=build /target/thm-ocorrencias-1.jar app.jar
+
+ENTRYPOINT ["java", "-jar", "app.jar"]
+```
