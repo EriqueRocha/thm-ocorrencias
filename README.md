@@ -2,9 +2,9 @@
 
 > OBS: o deploy foi feito em um servidor gratuito, ao clicar no link da aplicação, aguarde 1min para que o servidor saia do stand by e a aplicação seja iniciada. As imagens enviadas à API permanecem nela somente durante esta execução, ao entrar em stand by novamente elas serão perdidas
 
-[Acesse a Aplicação](https://ocorrencia-api.onrender.com/swagger-ui/index.html)
+<a href="https://ocorrencia-api.onrender.com/swagger-ui/index.html" target="_blank">Acesse a Aplicação</a>
 
-[LinkedIn](https://www.linkedin.com/in/erique-rocha-dev/)
+<a href="https://www.linkedin.com/in/erique-rocha-dev/" target="_blank">LinkedIn</a>
 
 #### Autor
 [Erique Rocha](https://github.com/EriqueRocha)
