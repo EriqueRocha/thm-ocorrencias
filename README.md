@@ -257,3 +257,5 @@ COPY --from=build /target/thm-ocorrencias-1.jar app.jar
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
 ```
+### Upload:
+A lógica usada para ligar a imagem enviada à API a uma ocorrência é feita da seguinte forma: sempre são salvas duas imagens, a primeira recebe o nome que começa com a letra "p" seguida do "id" da ocorrência e a segunda imagem começa com a letra "s" seguida do "id" da ocorrência, desta forma, torna possivel ligar uma imagem salva a ocorrência, visto que, um id só será usado uma unica vez na aplicação mesmo ele sendo deletado.
