@@ -27,7 +27,6 @@ Esta aplicação tem como objetivo implementar um sistema de cadastro de ocorrê
 * Projeto Lombok
 * Swagger OpenAPI
 * Global Exception Handlers
-* PostgreSQL
 * PGAdmin
 * Flyway
 
